@@ -9,9 +9,6 @@ public class AudioManager : MonoBehaviour
 	public Sound[] sounds;
 	// Sound is on or not
 	public static bool soundIsOn = true;
-	// Ui Button
-	[SerializeField] private GameObject turnOffSoundButton;
-	[SerializeField] private GameObject turnOnSoundButton;
 
 	void Awake()
 	{
@@ -36,31 +33,6 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
-	public void CheckUI()
-    {
-		// Check ui is empty or not
-        if (turnOffSoundButton == null)
-        {
-			turnOffSoundButton = GameObject.FindWithTag("TurnOffSound"); 
-        }
-        if (turnOnSoundButton == null)
-        {
-			turnOnSoundButton = GameObject.FindWithTag("TurnOnSound");
-		}
-
-		// Set Ui button
-		if (soundIsOn)
-		{
-			turnOffSoundButton.SetActive(true);
-			turnOnSoundButton.SetActive(false);
-		}
-		else
-		{
-			turnOffSoundButton.SetActive(false);
-			turnOnSoundButton.SetActive(true);
-		}
-	}
-
 	public void TurnOffSound()
     {
 		// Set bool
@@ -73,9 +45,6 @@ public class AudioManager : MonoBehaviour
 				s.source.Pause();
 			}
 		}
-		// Set Ui
-		turnOffSoundButton.SetActive(false);
-		turnOnSoundButton.SetActive(true);
 	}
 
 	public void TurnOnSound()
@@ -84,9 +53,6 @@ public class AudioManager : MonoBehaviour
 		soundIsOn = true;
 		// Start BGM again
 		Play("BGM");
-		// Set ui button
-		turnOffSoundButton.SetActive(true);
-		turnOnSoundButton.SetActive(false);
 	}
 
 	// This method is to play sound

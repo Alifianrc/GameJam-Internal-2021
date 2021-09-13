@@ -156,7 +156,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 294}
-  m_SizeDelta: {x: 745.6218, y: 179.09924}
+  m_SizeDelta: {x: 824.9772, y: 179.09924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33317300
 MonoBehaviour:
@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Title
+  m_Text: Komo Battle
 --- !u!222 &33317301
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.32805273, g: 0.7169812, b: 0.71055263, a: 1}
+  m_Color: {r: 0.67660797, g: 0.735849, b: 0.18396226, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -361,7 +361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &246547744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -956,7 +956,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 330.36267, y: 76.14975}
+  m_SizeDelta: {x: 506.07825, y: 122.999985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &918287249
 MonoBehaviour:
@@ -1107,20 +1107,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 52
+    m_FontSize: 91
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 52
+    m_MaxSize: 91
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Play
-
-'
+  m_Text: Play
 --- !u!222 &977613731
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1158,6 +1156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580b45fe13115b440818c9e4cdd26915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 3299380891010449016, guid: 10b7dba5d1e6605438f7fb4773bdbfe6,
+    type: 3}
 --- !u!4 &1538211212
 Transform:
   m_ObjectHideFlags: 0
@@ -1388,7 +1388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -245}
+  m_AnchoredPosition: {x: 0, y: -171}
   m_SizeDelta: {x: 330.36267, y: 76.14975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103827343

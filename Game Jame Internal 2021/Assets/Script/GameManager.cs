@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     private int highScore;
     SaveData theData;
 
+    [SerializeField] GameObject audioManager;
+
     private void Start()
     {
         StartCoroutine(EnemySpawner());
@@ -34,6 +36,11 @@ public class GameManager : MonoBehaviour
         scoreText.text = score.ToString();
         highScore = theData.highScore;
         highScoreText.text = highScore.ToString();
+
+        if (FindObjectOfType<AudioManager>() == false)
+        {
+            Instantiate(audioManager);
+        }
     }
 
     
